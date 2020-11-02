@@ -5,6 +5,7 @@ The Cross Platform AutoIt extractor
 * Supports AutoItv3+
 * Indents scripts
 * Does not execute the target binary
+* Extracts from UPX packed binaries
 
 ## How to Use
 
