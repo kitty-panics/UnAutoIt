@@ -105,7 +105,7 @@ func extractAll(fileName string) {
             }
             r.state = "Decompressed"
             fp := r.Name()
-            if r.IsAutoItScript(100) {
+            if r.IsAutoItScript(20) {
                 fp = fmt.Sprintf("script_%d.au3", r.id)
                 info := NewIndentOptions(styleInfo)
                 tidyTool := tidy.NewTidyInfo(r.CreateTokenizer())
