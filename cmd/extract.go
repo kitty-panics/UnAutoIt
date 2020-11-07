@@ -136,8 +136,11 @@ func extractResource(fileName string) {
         return
     }
     fileName = res.Name()
-    if strings.Contains(fileName, "SCRIPT") {
-        fileName = fmt.Sprintf("script_%d.au3", id)
+    if strings.HasPrefix(fileName, ">>>") {
+        cat := strings.ReplaceAll(fileName, ">", "")
+        cat = strings.ReplaceAll(cat, "<", "")
+        cat = strings.ReplaceAll(cat, " ", "-")
+        fileName = fmt.Sprintf("%s_%d.au3", cat, id)
         lexer := res.CreateTokenizer()
         cleaner := tidy.NewTidyInfo(lexer)
         cleaner.SetUseExtraNewline(opts.useExtraNewline)
