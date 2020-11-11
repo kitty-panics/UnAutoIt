@@ -27,3 +27,6 @@ The Cross Platform AutoIt extractor
     `./unautoit extract-all [--output-dir out] target-file.bin`  
     If `out` is given the extracted resource is placed in the directory specified by `out`.  
     The default value of `out` is `$PWD/dump`
+
+
+[![asciicast](https://asciinema.org/a/368551.svg)](https://asciinema.org/a/368551)
