@@ -54,7 +54,7 @@ func NewIndentOptions(rd string) *indentOptions {
         useTabs:            false,
         caseMap:            tidy.AutoDetect,
         useEndFuncComments: true,
-        nMaxStrLitSize:     80,
+        nMaxStrLitSize:     160,
         useExtraNewline:    true,
     }
     data := make(map[string]string)
