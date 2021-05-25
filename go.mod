@@ -12,5 +12,5 @@ require (
 	github.com/olekukonko/tablewriter v0.0.4
 	github.com/spf13/cobra v1.1.1
 	github.com/spf13/viper v1.7.1
-	github.com/x0r19x91/libautoit v1.2.7
+	github.com/x0r19x91/libautoit v1.2.8
 )
